@@ -273,6 +273,134 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/21/javascript-regular-expression/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fuming Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/21/javascript-regular-expression/" itemprop="url">记录用到过的js 正则表达式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-21T13:03:53+08:00">2018-04-21</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="js正则表达式"><a href="#js正则表达式" class="headerlink" title="js正则表达式"></a>js正则表达式</h2><h3 id="匹配-img-str-img-存储的图片路径"><a href="#匹配-img-str-img-存储的图片路径" class="headerlink" title="匹配[img]str[/img]存储的图片路径"></a>匹配[img]str[/img]存储的图片路径</h3><pre><code>const str = &apos;[img]../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg[/img]&apos;
+let reg = /(\[img\])(.+?)(\[\/img\])/gi
+const str = cclob.replace(reg, &apos;&lt;img src=&quot;$2&quot;/&gt;&apos;) // &lt;img src=&quot;../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg&quot;/&gt;
+</code></pre><h3 id="判断文件是否为png-jp-word等文件类型"><a href="#判断文件是否为png-jp-word等文件类型" class="headerlink" title="判断文件是否为png,jp,word等文件类型"></a>判断文件是否为png,jp,word等文件类型</h3><pre><code>const str = &apos;aaa.word&apos;
+str.match(/.*?(gif|png|jpg)/gi) // false
+</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/javascript_throttle_debounce/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -493,7 +621,7 @@ export function debounce (fn, wait, immediate) {
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

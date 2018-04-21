@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-02T09:55:31.423Z</updated>
+  <updated>2018-04-21T05:10:40.351Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录用到过的js 正则表达式</title>
+    <link href="http://yoursite.com/2018/04/21/javascript-regular-expression/"/>
+    <id>http://yoursite.com/2018/04/21/javascript-regular-expression/</id>
+    <published>2018-04-21T05:03:53.000Z</published>
+    <updated>2018-04-21T05:10:40.351Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="js正则表达式"><a href="#js正则表达式" class="headerlink" title="js正则表达式"></a>js正则表达式</h2><h3 id="匹配-img-str-img-存储的图片路径"><a href="#匹配-img-str-img-存储的图片路径" class="headerlink" title="匹配[img]str[/img]存储的图片路径"></a>匹配[img]str[/img]存储的图片路径</h3><pre><code>const str = &apos;[img]../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg[/img]&apos;let reg = /(\[img\])(.+?)(\[\/img\])/giconst str = cclob.replace(reg, &apos;&lt;img src=&quot;$2&quot;/&gt;&apos;) // &lt;img src=&quot;../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg&quot;/&gt;</code></pre><h3 id="判断文件是否为png-jp-word等文件类型"><a href="#判断文件是否为png-jp-word等文件类型" class="headerlink" title="判断文件是否为png,jp,word等文件类型"></a>判断文件是否为png,jp,word等文件类型</h3><pre><code>const str = &apos;aaa.word&apos;str.match(/.*?(gif|png|jpg)/gi) // false</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;js正则表达式&quot;&gt;&lt;a href=&quot;#js正则表达式&quot; class=&quot;headerlink&quot; title=&quot;js正则表达式&quot;&gt;&lt;/a&gt;js正则表达式&lt;/h2&gt;&lt;h3 id=&quot;匹配-img-str-img-存储的图片路径&quot;&gt;&lt;a href=&quot;#匹配-img-str-
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Vue2中使用函数节流和函数去抖</title>

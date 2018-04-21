@@ -345,7 +345,8 @@
           
             <h2 id="js正则表达式"><a href="#js正则表达式" class="headerlink" title="js正则表达式"></a>js正则表达式</h2><h3 id="匹配-img-str-img-存储的图片路径"><a href="#匹配-img-str-img-存储的图片路径" class="headerlink" title="匹配[img]str[/img]存储的图片路径"></a>匹配[img]str[/img]存储的图片路径</h3><pre><code>const str = &apos;[img]../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg[/img]&apos;
 let reg = /(\[img\])(.+?)(\[\/img\])/gi
-const str = cclob.replace(reg, &apos;&lt;img src=&quot;$2&quot;/&gt;&apos;) // &lt;img src=&quot;../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg&quot;/&gt;
+const str = cclob.replace(reg, &apos;&lt;img src=&quot;$2&quot;/&gt;&apos;) 
+//&lt;img src=&quot;../group1/M00/00/06/wKgudVrWqlCAD8ajAA1rIuRd3Es808.jpg&quot;/&gt;    
 </code></pre><h3 id="判断文件是否为png-jp-word等文件类型"><a href="#判断文件是否为png-jp-word等文件类型" class="headerlink" title="判断文件是否为png,jp,word等文件类型"></a>判断文件是否为png,jp,word等文件类型</h3><pre><code>const str = &apos;aaa.word&apos;
 str.match(/.*?(gif|png|jpg)/gi) // false
 </code></pre>
